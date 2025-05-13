@@ -1,29 +1,26 @@
-<html>
-    <head><title>Movie Site</title>
-        <link rel="stylesheet" href="movie.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a class="active" href="#">Movie Site</a>
-            <div class="form">
-                <form role="search" id="forms">
-                <input type="search" id="query" name="q" placeholder="Search..."">
-                </form>
-            </div>
-        </div>
-        
-        <div style="padding-left: 16px;"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movies Site</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
 
+  <div class="topnav">
+    <a class="active" href="#">Cinemahub</a>
+    <div class="search-container">
+      <form role="search" id="form">
+        <input type="search" id="query" name="q" placeholder="Search..">
+      </form>
+    </div>
+  </div>
 
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <center><img src="#" class="thumbnail"></center>
-                    <h3>Movie Title</h3>
-                </div>
-            </div>    
-        </div>
-        
-        
+  <section id="section">
+    <!-- Movie cards will be injected here by JavaScript -->
+  </section>
 
-    </body></html>
+  <script src="movies.js"></script>
+</body>
+</html>
